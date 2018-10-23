@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en" style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Questionare form wizard">
+	<meta name="author" content="r.b.">
+	<title>Questionare form wizard</title>
+
+	<!-- Favicons-->
+    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon-180x180.png" />
+
+	<!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="./css/animate.min.css" rel="stylesheet">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/menu.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/responsive.css" rel="stylesheet">
+	<link href="./css/all_icons_min.css" rel="stylesheet">
+	<link href="./css/grey.css" rel="stylesheet">
+	
+	<!-- COLOR CSS -->
+	<link href="./css/color_3.css" rel="stylesheet">
+	
+	<!-- YOUR CUSTOM CSS -->
+	<link href="./css/custom.css" rel="stylesheet">
+
+	<script src="./js/modernizr.js"></script>
+	<!-- Modernizr -->
+
+  </head>
+
+<body style="overflow: visible;">
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+
+	<header>
+		<div class="container-fluid">
+		    <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                        <h1><a href="#">Questionare form wizard</a></h1>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div id="social">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-google"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+                </div>
+            </div>
+		</div>
+		<!-- container -->
+	</header>
+	<!-- End Header -->
+
+	<main>
+		<div id="form_container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div id="left_form">
+						<figure><img src="./img/questionaire_bg.svg" alt=""></figure>
+						<h2>Questionaire</h2>
+						<p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel.</p>
+						<a href="#" id="more_info" data-toggle="modal" data-target="#more-info"><i class="pe-7s-info"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-7">
+
+					<div id="wizard_container">
+						<div id="top-wizard">
+							<div id="progressbar"></div>
+						</div>
+						<!-- /top-wizard -->
+						<form name="example-1" id="wrapped" method="POST">
+							<input id="website" name="website" type="text" value="">
+							<!-- Leave for security protection, read docs for details -->
+							<div id="middle-wizard">
+
+								<div class="step">
+									<h3 class="main_question"><strong class="location"></strong>Please fill with your details</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="firstname" class="form-control required" placeholder="First name">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="lastname" class="form-control required" placeholder="Last name">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" name="email" class="form-control required" placeholder="Your Email">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" name="instructorlastname" class="form-control required" placeholder="Instructor's Last Name">
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+									<br>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group terms">
+												<input name="terms" type="checkbox" class="icheck required" value="yes">
+												<label>Please accept <a href="#" data-toggle="modal" data-target="#terms-txt">terms and conditions</a> ?</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /step-->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>What do FDA regulations have to do with treatment devices used in the radiation therapy field?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="one" class="icheck required">They inform you on the correct use of a device</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="one" class="icheck required">It is a federal requirement that all devices used on humans, and their manufacturer are registered with the FDA</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="one" class="icheck required">The FDA does not control treatment devices</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>Federal Regulations Title 21, Part 807, 21 CFR Part 820 states that,</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="two" class="icheck required">It is a requirement to follow quality system regulations relating to methods used in manufacturing, designing, storing and installing and servicing medical devices</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="two" class="icheck required">The FDA may not require a manufacturer to follow quality system regulations relating to methods used in manufacturing, designing, storing and installing and servicing medical devices</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="two" class="icheck required">OSHA may require a manufacturer to follow quality system regulations relating to methods used in manufacturing, designing, storing and installing and servicing medical devices</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>The FDA:</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="three" class="icheck required">does control the labeling of medical devices</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="three" class="icheck required">does not control the labeling of medical devices</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>As you progress from Class I to Class III classification of medical devices, the regulatory control:</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="four" class="icheck required">increases</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="four" class="icheck required">decreases</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>Smithers Medical Products, Inc. is registered with the FDA, as are all products, and the company received an exemplary review from an on-site inspection</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="five" class="icheck required">False, the FDA does not perform inspections on-site</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="five" class="icheck required">True</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="three"><strong class="location"></strong>MSDS stands for</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="six" class="icheck required">Material Sheets Defective Standards</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="six" class="icheck required">Method of Safety and Directive Standards</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="six" class="icheck required">Material Safety Data Sheet</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="three"><strong class="location"></strong>The purpose of the Right to Know Law is</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="seven" class="icheck required">to inform OSHA what chemicals are in use at your facility</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="seven" class="icheck required">to inform a user of all the uses of a chemical</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="seven" class="icheck required">to ensure potential hazards are evaluated and passed on to employers and employees</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="three"><strong class="location"></strong>The Community Right to Know Law falls under the domain of the</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="eight" class="icheck required">hospital safety officer</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="eight" class="icheck required">OSHA</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="eight" class="icheck required">EPA</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>MSDS contains valuable information</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="nine" class="icheck required">for firefighters if there is a fire, on the manufacturer of a chemical, and on proper storage</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="nine" class="icheck required">on proper storage</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="nine" class="icheck required">on the manufacturer of a chemical</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="nine" class="icheck required">for firefighters if there is a fire</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="five" name="nine" class="icheck required">only to the department safety officer</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="six" name="nine" class="icheck required">on the manufacturer of a chemical and on proper storage</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="three"><strong class="location"></strong>Section III, Physical/Chemical Characteristics</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="ten" class="icheck required">explains detailed technical data for the physicist</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="ten" class="icheck required">provides chemical reactivity data</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="ten" class="icheck required">provides fundamental information important to your safety</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>MSDS for foaming agents used in radiation therapy</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="eleven" class="icheck required">may not be used interchangeably from one brand of product to another</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="eleven" class="icheck required">may be used from one brand to another as long as the products are similar</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>Obtaining MSDS from one company to use for another company's similar type product is</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twelve" class="icheck required">probably not ethical but certainly legal</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twelve" class="icheck required">a violation of federal and state laws</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="twelve" class="icheck required">up to the discretion of the hospital safety officer</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>Toxicology of chemicals (PEL) is regulated by</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirteen" class="icheck required">MSDS</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirteen" class="icheck required">OSHA</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="thirteen" class="icheck required">EPA</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="thirteen" class="icheck required">FDA</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>Toxicology of chemicals is</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="fourteen" class="icheck required">provided by SMP for its foaming agents</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="fourteen" class="icheck required">provided by OSHA and the EPA</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="fourteen" class="icheck required">provided by every manufacturer of foam</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="three"><strong class="location"></strong>When an outside, independent lab tested SMP Alpha Cradle brand foam</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="fifteen" class="icheck required">they determined that MDI PEL limits were satisfactory</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="fifteen" class="icheck required">found TDI vapors present in the foam</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="fifteen" class="icheck required">the levels of detected MDI vapors were less than the limit of detection</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="four"><strong class="location"></strong>What vapors are given off by Alpha Cradle brand foam?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="sixteen" class="icheck required">TDI</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="sixteen" class="icheck required">formaldehyde</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="sixteen" class="icheck required">TDI, formaldehyde, and CFCs</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="sixteen" class="icheck required">not TDI, formaldehyde, and CFCs</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="four"><strong class="location"></strong>What vapors may be found in other polyurethane foams?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="seventeen" class="icheck required">TDI</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="seventeen" class="icheck required">formaldehyde</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="seventeen" class="icheck required">CFCs</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="seventeen" class="icheck required">TDI, formaldehyde, and CFCs</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="five" name="seventeen" class="icheck required">not TDI, formaldehyde, or CFCs</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="three"><strong class="location"></strong>If you use a foam outside of a medical company at your hospital on a patient</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="eighteen" class="icheck required">it is not covered by the FDA, so toxicology is no concern</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="eighteen" class="icheck required">you will save time and money and get the same effect</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="eighteen" class="icheck required">you will be in violation of federal law and may subject your patients and staff to toxic gas</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>Attenuation describes</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="nineteen" class="icheck required">what happens to a radiation beam as it passes through a material or object</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="nineteen" class="icheck required">information that can be found on the MSDS</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="nineteen" class="icheck required">how skin sparring affects the patient</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="four"><strong class="location"></strong>When tested with microwave radiation for one hour at temperatures up to 50ÂºC</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twenty" class="icheck required">forms began to break apart due to the intense heat</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twenty" class="icheck required">the foam softened and started to lose its shape</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="twenty" class="icheck required">the form got too hot for the patient to remain inside for the 60 minute treatment</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="twenty" class="icheck required">no changes were noticed in the mechanical properties of the foam</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="five" name="twenty" class="icheck required">minor changes were noticed in the mechanical properties of the foam</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="three"><strong class="location"></strong>Placement of the probes on the bottom surface of the slab detected</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twentyone" class="icheck required">a significant absorption of microwave radiation</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twentyone" class="icheck required">no significant absorption of microwave radiation</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="twentyone" class="icheck required">a significant rise in temperature at the base of the foam that did not cause damage to the foam</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="twentyone" class="icheck required">a significant absorption of microwave radiation and a significant rise in temperature at the base of the foam that did not cause damage to the foam</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="five" name="twentyone" class="icheck required">no significant absorption of microwave radiation and a significant rise in temperature at the base of the foam that did not cause damage to the foam</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>When tested for hyperthermia, there was a temperature gradient at the top of the slab. The bottom of the slab temperature was raised</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twentytwo" class="icheck required">due to the heat transfer</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twentytwo" class="icheck required">due to the microwave power absorption</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="twentytwo" class="icheck required">due to both heat transfer and microwave power absorption</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="six"><strong class="location"></strong>The Alpha Cradle Advantage gives you a critical edge with</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twentythree" class="icheck required">IGRT and IMRT</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twentythree" class="icheck required">CT on Rails</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="twentythree" class="icheck required">TOMO Therapy, SBRT, and Particle Therapy</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="twentythree" class="icheck required">Interstitial Radiation Therapy</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="five" name="twentythree" class="icheck required">IGRT, IMRT, TOMO Therapy, SBRT, and Particle Therapy</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="six" name="twentythree" class="icheck required">IGRT, IMRT, CT on Rails, TOMO Therapy, SBRT, and Particle Therapy</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="seven" name="twentythree" class="icheck required">IGRT, IMRT, TOMO Therapy, SBRT, Particle Therapy, and Interstitial Radiation Therapy</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="three"><strong class="location"></strong>Alpha Cradle forms increase comfort and accuracy and can be used for what type of patients?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twentyfour" class="icheck required">curative</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twentyfour" class="icheck required">palliative</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="twentyfour" class="icheck required">curative and palliative
+</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>Alpha Cradle brand foam can be used by pouring the amount of foam needed from each bottle</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twentyfive" class="icheck required">True</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twentyfive" class="icheck required">False</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>Accordion-style bottles are used to</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twentysix" class="icheck required">increase the shaking time of the foam</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twentysix" class="icheck required">provide a safety measure if you shake the bottle too long</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="twentysix" class="icheck required">contain the foam until you are ready to use it</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>Alpha Cradle brand foam is the same as other foams on the market</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twentyseven" class="icheck required">False. Alpha Cradle foam is proprietary and has never been duplicated</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twentyseven" class="icheck required">True. Polyurethane foams have the same general chemical ingredients and properties</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="four"><strong class="location"></strong>ACMMII and ACPRS are</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twentyeight" class="icheck required">types of Alpha Cradle brand foam</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twentyeight" class="icheck required">regulated by federal, state and local laws</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="twentyeight" class="icheck required">physical and chemical characteristics found on MSDS sheets</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="twentyeight" class="icheck required">products of SMP</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="five" name="twentyeight" class="icheck required">types of Alpha Cradle brand foam, regulated by federal, state and local laws, and physical and chemical characteristics found on MSDS sheets</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="six" name="twentyeight" class="icheck required">types of Alpha Cradle brand foam and products of SMP</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="five"><strong class="location"></strong>Differences between ACPRS and vac bags are</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="twentynine" class="icheck required">ACPRS have flat bases, vac bags do not</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="twentynine" class="icheck required">a small cut will ruin a vac bag, but will not harm an ACPRS</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="twentynine" class="icheck required">vac bags pull away from patients, ACPRS push foam tight against a patient</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="twentynine" class="icheck required">ACPRS can have ports cut into them, vac bags cannot</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="five" name="twentynine" class="icheck required">ACPRS have flat bases, vac bags do not; a small cut will ruin a vac bag, but will not harm an ACPRS; vac bags pull away from patients, ACPRS push foam tight against a patient; and ACPRS can have ports cut into them, vac bags cannot</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>If there's more foam than I need for my purpose, and I just use part of the mixed foam, I should recap the remaining foam in the bottle</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirty" class="icheck required">True</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirty" class="icheck required">False</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>If the foam is shaken too long, and the bottle becomes firm or starts to expand, the bottle must be opened carefully, but immediately</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirtyone" class="icheck required">True</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirtyone" class="icheck required">False</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="five"><strong class="location"></strong>If I get foam on my skin, I should</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirtytwo" class="icheck required">wait until the form is made, then simply wash off</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirtytwo" class="icheck required">get some KY Jelly and wipe the foam off then wash my hands immediately</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="thirtytwo" class="icheck required">immediately use acetone to get the foam off my skin</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="thirtytwo" class="icheck required">using a cotton washcloth, wash the area with tepid soapy water for 15 minutes</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="five" name="thirtytwo" class="icheck required">get some KY Jelly and wipe the foam off then wash my hands immediately or using a cotton washcloth, wash the area with tepid soapy water for 15 minutes</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="six" name="thirtytwo" class="icheck required">immediately use acetone to get the foam off my skin or using a cotton washcloth, wash the area with tepid soapy water for 15 minutes</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="six"><strong class="location"></strong>To prevent an accident with the foam, I should always</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirtythree" class="icheck required">wear protective smock, gloves, and goggles</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirtythree" class="icheck required">read the directions</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="thirtythree" class="icheck required">shake the bottle with the cap pointing up away from everyone</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="thirtythree" class="icheck required">shake the bottle with the cap pointing down inside the bag</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="five" name="thirtythree" class="icheck required">wear protective smock, gloves, and goggles; read the directions; and shake the bottle with the cap pointing up away from everyone</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="six" name="thirtythree" class="icheck required">wear protective smock, gloves, and goggles; read the directions; and shake the bottle with the cap pointing down inside the bag</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>If I get foam on a hardened surface, I should</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirtyfour" class="icheck required">immediately wipe it off the surface</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirtyfour" class="icheck required">wait until the form is finished then remove the foam</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>If the foam spills onto carpet or clothing, I should</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirtyfive" class="icheck required">immediately wipe it off the surface</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirtyfive" class="icheck required">wait until the form is finished then remove the foam</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="three"><strong class="location"></strong>If I have an accident with the foam, after taking immediate steps necessary, I must</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirtysix" class="icheck required">file a report with OSHA</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirtysix" class="icheck required">file a report with the FDA</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="thirtysix" class="icheck required">file an accident report with SMP</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>Which statement is correct?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirtyseven" class="icheck required">bottle #1 contains papi, and bottle #2 contains polyol</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirtyseven" class="icheck required">bottle #1 contains polyol, and bottle #2 contains papi</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>For maximum durability with the ACMMII, I can place a 10" x 12" piece of styrofoam</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirtyeight" class="icheck required">inside the bag of foam</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirtyeight" class="icheck required">under the bag of foam</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="four"><strong class="location"></strong>If a thick piece foam is in the path of the beam, I can</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="thirtynine" class="icheck required">treat right through the foam</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="thirtynine" class="icheck required">treat around the foam</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="three" name="thirtynine" class="icheck required">cut a port in the foam with a hot wire cutter</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="four" name="thirtynine" class="icheck required">cut a port in the foam with a serrated blade</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>Patient comfort and proper immobilization is not important to my palliative patients</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="forty" class="icheck required">True</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="forty" class="icheck required">False</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>The major concern with Alpha Cradle foam and today's treatment machines is that the foam has a significant affect on transmission</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="fortyone" class="icheck required">True</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="fortyone" class="icheck required">False</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question" data-answer="one"><strong class="location"></strong>Treating through thick areas of foam will affect skin sparring</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="fortytwo" class="icheck required">True</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="fortytwo" class="icheck required">False</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="submit step">
+									<h3 class="main_question" data-answer="two"><strong class="location"></strong>Treating through the foam will release gases in the foam</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="one" name="fortythree" class="icheck required">True</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="two" name="fortythree" class="icheck required">False</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+							</div>
+							<!-- /middle-wizard -->
+							<div id="bottom-wizard">
+								<button type="button" name="backward" class="backward">Backward </button>
+								<button type="button" name="forward" class="forward">Forward</button>
+								<button type="submit" name="process" class="submit">Submit</button>
+							</div>
+							<!-- /bottom-wizard -->
+						</form>
+					</div>
+					<!-- /Wizard container -->
+				</div>
+			</div><!-- /Row -->
+		</div><!-- /Form_container -->
+	</main>
+	
+	<footer id="home" class="clearfix">
+		<p>© 2018 Questionare form wizard</p>
+		<ul>
+			<li><a href="#" class="animated_link">Terms and conditions</a></li>
+			<li><a href="#" class="animated_link">Contacts</a></li>
+		</ul>
+	</footer>
+	<!-- end footer-->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- cd-overlay-content -->
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- Modal info -->
+	<div class="modal fade" id="more-info" tabindex="-1" role="dialog" aria-labelledby="more-infoLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="more-infoLabel">Frequently asked questions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- SCRIPTS -->
+	<!-- Jquery-->
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<!-- Common script -->
+	<script src="./js/common_scripts.js"></script>
+	<!-- Wizard script -->
+	<script src="./js/questionare_wizard_func.js"></script>
+	<!-- Menu script -->
+	<script src="./js/velocity.min.js"></script>
+	<!-- Theme script -->
+	<script src="./js/functions.js"></script>
+	
+
+
+</body></html>
